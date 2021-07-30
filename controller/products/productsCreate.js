@@ -1,15 +1,12 @@
 const Product = require("../../modules/products/product");
 
 module.exports = (req, res, next) => {
-  var { name, src, des, subDes, price, discountPrice, size, qty } = req.body;
+  var { name, src, price, discountPrice, size, qty } = req.body;
 
   var product = new Product({
-    name: name,
-    src: {
-      originalname: originalname,
-    },
-    des: des,
-    subDes: subDes,
+    
+    name:name,
+    src:src,
     price: price,
     discountPrice: discountPrice,
     size: size,
